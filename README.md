@@ -10,6 +10,10 @@ The goal of this project is to practice React JS.
 
 ## Video
 
+https://github.com/user-attachments/assets/5b88f3a1-d96b-468f-8cf2-c8b57cf6ac8d
+
+
+
 ## Image
 ![](./dice-game-demo.png)
 
