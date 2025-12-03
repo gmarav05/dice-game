@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Die from "./Die.jsx"
+import Die from "./Die"
 import { nanoid } from "nanoid"
 
 export default function App() {
@@ -19,7 +19,18 @@ export default function App() {
         setDice(generateAllNewDice())
     }
 
-    const diceElements = dice.map(dieObj => <Die key={dieObj.id} value={dieObj.value} />)
+    function hold(id) {
+        console.log(id)
+    }
+
+    const diceElements = dice.map(dieObj => (
+        <Die
+            key={dieObj.id}
+            value={dieObj.value}
+            isHeld={dieObj.isHeld}
+            hold={() => hold(dieObj.id)}
+        />
+    ))
 
     return (
         <main>
